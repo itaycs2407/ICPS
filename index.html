@@ -15,8 +15,67 @@
 
 <body>
     <h1>Hello, world!</h1>
+    <button type="button" id="check1" class="btn btn-primary">Who amI ?</button>
+    <button type="button" class="btn btn-primary">General</button>
+    <button type="button" class="btn btn-primary">Profashional</button>
+    <div class="container">
+        <div id="card1" class="card" style="height: 100rem; width: 100rem;">
+            <!--
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                    <button type="button" class="btn btn-primary ">Who amI ?</button>
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
 
-
+            </div>-->
+        </div>
+    </div>
+    <div class="container">
+        <div class="span3 well">
+            <left>
+                <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="me.jpg" name="aboutme"
+                        width="140" height="140" class="img-circle"></a>
+                <h3>Itay Cohen - General Information</h3>
+                <em>click my face for more</em>
+            </left>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                        <h4 class="modal-title" id="myModalLabel">More About Joe</h4>
+                    </div>
+                    <div class="modal-body">
+                        <center>
+                            <img src="me.jpg" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                            <h3 class="media-heading">Itay Cohen <small>Israel</small></h3>
+                            <span><strong>Skills: </strong></span>
+                            <span class="label label-warning">HTML5/CSS</span>
+                            <span class="label label-info">JavaScript</span>
+                            <span class="label label-info">Microsoft Office</span>
+                            <span class="label label-success">Windows XP, Vista, 7</span>
+                        </center>
+                        <hr>
+                        <center>
+                            <p class="text-left"><strong>Bio: </strong><br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet
+                                commodo a, vulputate vel tellus.</p>
+                            <br>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <center>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close </button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -28,6 +87,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="app.js"></script>
 </body>
 
 </html>
