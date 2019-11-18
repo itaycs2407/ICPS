@@ -1,3 +1,9 @@
+const tags = {
+    item: document.querySelector('#check1'),
+    cardCont: document.querySelector('#card1')
+
+}
+
 let cardDetails = `<div  class="card" style="height: 100rem; width: 100rem;">
 <div class="card-body">
                 <h5 class="card-title">%title%</h5>
@@ -5,17 +11,12 @@ let cardDetails = `<div  class="card" style="height: 100rem; width: 100rem;">
             </p>
 
             </div>`;
-const item = document.querySelector('#check1');
-const cardCont = document.querySelector('#card1');
 
-console.log(item, cardCont)
-item.addEventListener('click', () => {
 
-    //cardCont.insertAdjacentHTML('beforebegin', "")
-    // alert("the button was clicked");
-
+console.log(tags.item, tags.cardCont)
+tags.item.addEventListener('click', () => {
     var newText = cardDetails.replace("%title%", "Itay Cohen");
     newText = newText.replace("%content%", "my name is momomgfog");
     console.log(newText)
-    cardCont.insertAdjacentHTML('afterbegin', newText)
+    tags.cardCont.insertAdjacentHTML('afterbegin', newText)
 })
