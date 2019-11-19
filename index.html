@@ -10,12 +10,37 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>The Itay Cohen</title>
 </head>
 
 <body>
 
-    <div id="demo" class="carousel slide" data-ride="carousel">
+    <button type="button" id="check1" class="btn btn-primary btn-lg">Home</button>
+    <button type="button" class="btn btn-primary btn-lg">Hobies</button>
+    <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle btn-lg" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Projects
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">The budgty App</a>
+            <a class="dropdown-item" href="#">Forkify</a>
+            <a class="dropdown-item" href="https://github.com/itaycs2407/AndroCalculaot">GitHub : Calculator in
+                Kotlin</a>
+        </div>
+    </div>
+    <button type="button" class="btn btn-info btn-lg" id="contact">Contact</button>
+    <button type="button" class="btn btn-warning btn-lg">About</button>
+
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+    <div id="carousel" class="carousel slide" data-ride="carousel">
 
         <!-- Indicators -->
         <ul class="carousel-indicators">
@@ -62,24 +87,7 @@
     </center>
 -->
 
-    <button type="button" id="check1" class="btn btn-primary">Who amI ?</button>
-    <button type="button" class="btn btn-primary">General</button>
-    <button type="button" class="btn btn-primary">Profashional</button>
-    <button type="button" class="btn btn-primary">In the past</button>
 
-    <div class="btn-group dropright">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            projects
-        </button>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">The Recipe finder</a>
-            <a class="dropdown-item" href="#">The Pig game</a>
-            <a class="dropdown-item" href="https://github.com/itaycs2407/AndroCalculaot">GitHub : Calculator in
-                Kotlin</a>
-            <!-- Dropdown menu links -->
-        </div>
-    </div>
     <!--
     <div class="container">
         <div id="card1" class="card" style="height: 100rem; width: 100rem;">
